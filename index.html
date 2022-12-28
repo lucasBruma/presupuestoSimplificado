@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto simplificado</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="add-panel">
+      <h1>Presupuesto simplificado</h1>
+      <div class="field">
+        <input type="text" name="income" id="income"/>
+        <label for="income">Presupuesto</label>
+        <div class="field-symbol">$</div>
+      </div>
+      <div class="add-expense">
+        <div class="field">
+          <input type="text" name="expense-name" id="expense-name" />
+          <label for="expense-name">Nombre del gasto</label>
+        </div>
+        <div class="field">
+          <input type="text" name="expense-amount" id="expense-amount"/>
+          <label for="expense-amount">Gasto</label>
+          <div class="field-symbol">$</div>
+        </div>
+        <button name="add-expense-button" id="add-expense-button" class="add-expense-button">
+          <img src="./images/plus.svg" alt="Plus" />
+        </button>
+      </div>
+    </div>
+
+    <div class="expenses-panel">
+      <h2>Gastos</h2>
+      <div class="expense-table">
+      </div>
+    </div>
+
+    <div class="summary-panel">
+      <div class="summary-item">
+        <div class="summary-label">Ingreso</div>
+        <div class="summary-amount">$0</div>
+      </div>
+
+      <div class="summary-item">
+        <div class="summary-label">Gastos</div>
+        <div class="summary-amount">$0</div>
+      </div>
+
+      <div class="summary-item">
+        <div class="summary-label">Balance</div>
+        <div class="summary-amount">$0</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
